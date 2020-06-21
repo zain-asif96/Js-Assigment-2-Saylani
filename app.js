@@ -189,3 +189,88 @@
 // document.write(
 //   "There are " + occurenceOfpartWord + " occurences of the word 'the'."
 // );
+
+// Chapter 26 -30 Task No 1 //
+
+// var userInput = prompt("Enter positive integer: (e.g 4.5621)");
+// document.write("Number: " + userInput);
+// document.write("<br />");
+
+// var roundUserInput = Math.round(userInput);
+// document.write("Roundoff value: " + roundUserInput);
+// document.write("<br />");
+
+// var floorUserInput = Math.floor(userInput);
+// document.write("Floor value: " + floorUserInput);
+// document.write("<br />");
+
+// var ceilUserInput = Math.ceil(userInput);
+// document.write("Ceil value: " + ceilUserInput);
+// document.write("<br />");
+
+// Chapter 26 -30 Task No 2 //
+
+// var userInput = prompt("Enter negative integer: (e.g -4.5621)");
+// document.write("Number: " + userInput);
+// document.write("<br />");
+
+// var roundUserInput = Math.round(userInput);
+// document.write("Roundoff value: " + roundUserInput);
+// document.write("<br />");
+
+// var floorUserInput = Math.floor(userInput);
+// document.write("Floor value: " + floorUserInput);
+// document.write("<br />");
+
+// var ceilUserInput = Math.ceil(userInput);
+// document.write("Ceil value: " + ceilUserInput);
+// document.write("<br />");
+
+// Chapter 26 -30 Task No 3 //
+
+// var numberOne = -81;
+// var numberTwo = Math.abs(numberOne);
+// var numberThree = 42;
+// var numberFour = Math.abs(numberThree);
+
+// document.write("The absolute value of " + numberOne + " is " + numberTwo);
+// document.write("<br />");
+// document.write("The absolute value of " + numberThree + " is " + numberFour);
+
+// Chapter 26 -30 Task No 4 //
+
+// var diceNumber = Math.floor(Math.random() * 10);
+// document.write("Random dice number: " + diceNumber);
+
+// Chapter 26 -30 Task No 5 //
+
+// var flipCoin = Math.round(Math.random() * 2);
+// document.write(flipCoin);
+// document.write("<br />");
+// if (flipCoin >= 2) {
+//   document.write("Random coin value: Heads");
+// } else {
+//   document.write("Random coin value: Tails");
+// }
+
+// Chapter 26 -30 Task No 6 //
+
+// var randomNumber = Math.round(Math.random() * 100);
+// document.write("Random number between 1 and 100 is: " + randomNumber);
+
+// Chapter 26 -30 Task No 7 //
+
+// var userInput = prompt("Enter your weight in kg: ");
+// var weight = parseInt(userInput);
+// document.write("The weight of user is " + weight + " kilograms");
+
+// Chapter 26 -30 Task No 8 //
+
+// var randomNumber = Math.floor(Math.random() * 10 + 1);
+// var userInput = prompt("Enter a number between 1 and 10: ");
+
+// if (userInput == randomNumber) {
+//   alert("Congratulations! You've guess the right number.");
+// } else {
+//   alert("Try Again!");
+// }
