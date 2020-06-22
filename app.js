@@ -274,3 +274,193 @@
 // } else {
 //   alert("Try Again!");
 // }
+
+// Chapter 31 -34 Task No 1 //
+
+// var currentDateTime = new Date();
+// document.write("<h2>" + currentDateTime + "</h2>");
+
+// Chapter 31 -34 Task No 2 //
+
+// var currentDateTime = new Date();
+// var monthList = [
+//   "January",
+//   "February",
+//   "March",
+//   "April",
+//   "May",
+//   "June",
+//   "July",
+//   "August",
+//   "September",
+//   "October",
+//   "November",
+//   "December",
+// ];
+// var currentMonth = monthList[currentDateTime.getMonth()];
+// document.write("<h2>" + "Current Month: " + currentMonth + "</h2>");
+
+// Chapter 31 -34 Task No 3 //
+
+// var currentDateTime = new Date();
+// var weekDays = [
+//   "Sunday",
+//   "Monday",
+//   "Tuesday",
+//   "Wednesday",
+//   "Thursday",
+//   "Friday",
+//   "Saturday",
+// ];
+// var currentDay = weekDays[currentDateTime.getDay()];
+// document.write("<h2>" + "Today is " + currentDay.substr(0, 3) + "</h2>");
+
+// Chapter 31 -34 Task No 4 //
+
+// var currentDateTime = new Date();
+// var weekDays = [
+//   "Sunday",
+//   "Monday",
+//   "Tuesday",
+//   "Wednesday",
+//   "Thursday",
+//   "Friday",
+//   "Saturday",
+// ];
+// var currentDay = weekDays[currentDateTime.getDay()];
+
+// if (currentDay == "Sunday" || currentDay == "Saturday") {
+//   alert("It's Funday");
+// } else {
+//   alert("It's Working Day");
+// }
+
+// Chapter 31 -34 Task No 5 //
+
+// var currentDateTime = new Date();
+// var weekDays = [
+//   "Sunday",
+//   "Monday",
+//   "Tuesday",
+//   "Wednesday",
+//   "Thursday",
+//   "Friday",
+//   "Saturday",
+// ];
+// var currentDay = weekDays[currentDateTime.getDay()];
+// if (currentDay <= 16) {
+//   alert("First fifteen days of the month");
+// } else {
+//   alert("Last days of the month");
+// }
+
+// Chapter 31 -34 Task No 6 //
+
+// var currentDateTime = new Date();
+// var currentTime = currentDateTime.getTime();
+// var currentMinute = currentTime / (1000 * 60);
+
+// document.write("Current Date is: " + currentDateTime);
+// document.write("<br />");
+// document.write("Elapsed miliseconds since January 1, 1970: " + currentTime);
+// document.write("<br />");
+// document.write("Elapsed minutes since January 1, 1970: " + currentMinute);
+
+// Chapter 31 -34 Task No 7 //
+
+// var currentDateTime = new Date();
+// var currentHour = currentDateTime.getHours();
+
+// if (currentHour > 12) {
+//   alert("It's PM");
+// } else {
+//   alert("It's AM");
+// }
+
+// Chapter 31 -34 Task No 8//
+
+// var laterDate = new Date(new Date().getFullYear(), 11, 31);
+// document.write("Later Date: " + laterDate);
+
+// Chapter 31 -34 Task No 9//
+
+// var currentDateTime = new Date();
+// var ramadanDate = new Date();
+// ramadanDate.setDate(-37);
+
+// var timeDifference = Math.abs(currentDateTime - ramadanDate);
+
+// var dayDiff = Math.ceil(timeDifference / (1000 * 60 * 60 * 24));
+
+// document.write(dayDiff + " days have been passed since 1st Ramadan 2020");
+
+// Chapter 31 -34 Task No 10 //
+
+// var currentDate = new Date();
+// document.write("On reference date " + currentDate);
+// document.write(", ");
+// currentDate.getFullYear(2020);
+// var currentYearFirstDate = new Date();
+// currentYearFirstDate.setDate(-151);
+// var getSeconds =
+//   (currentDate.getTime() - currentYearFirstDate.getTime()) / 1000;
+// document.write(getSeconds + " had passed since the beginning of 2020");
+
+// Chapter 31 -34 Task No 11 //
+
+// Chapter 31 -34 Task No 12//
+
+// var now = new Date();
+// document.write("Current Date: " + now);
+// document.write("<br />");
+// now.setFullYear(1920);
+// document.write("100 years back, it was " + now);
+
+// Chapter 31 -34 Task No 13//
+
+// Chapter 31 -34 Task No 14//
+// var currentDateTime = new Date();
+// var customerName = prompt("Enter your customerName:");
+// var monthList = [
+//   "January",
+//   "February",
+//   "March",
+//   "April",
+//   "May",
+//   "June",
+//   "July",
+//   "August",
+//   "September",
+//   "October",
+//   "November",
+//   "December",
+// ];
+// var currentMonth = monthList[currentDateTime.getMonth()];
+
+// var numOfUnits = prompt("Enter Number of units you used in current month");
+// var chargesPerUnit = 15;
+// var netPayableAmount = numOfUnits * chargesPerUnit;
+// var latePaymentCharges = 400;
+// var grossPayableAmount = netPayableAmount + latePaymentCharges;
+
+// document.write("<h1>" + "K-Electric Bill" + "</h1>");
+// document.write("Customer Name: " + "<b>" + customerName + "</b>");
+// document.write("<br />");
+// document.write("Month: " + "<b>" + currentMonth + "</b>");
+// document.write("<br />");
+// document.write("No of units: " + "<b>" + numOfUnits + "</b>");
+// document.write("<br />");
+// document.write("Charges per unit: " + "<b>" + chargesPerUnit + "</b>");
+// document.write("<br />");
+// document.write("<br />");
+// document.write(
+//   "Net Amount Payable(within due date): " + "<b>" + netPayableAmount + "</b>"
+// );
+// document.write("<br />");
+// document.write(
+//   "Late payment surcharge: " + "<b>" + latePaymentCharges + "</b>"
+// );
+// document.write("<br />");
+// document.write(
+//   "Gross Amount Payable(after due date): " + "<b>" + grossPayableAmount + "</b>"
+// );
