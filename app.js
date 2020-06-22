@@ -408,6 +408,12 @@
 
 // Chapter 31 -34 Task No 11 //
 
+// var currentDate = new Date();
+// document.write("Current Date: " + currentDate);
+// document.write("<br />");
+// currentDate.setMinutes(currentDate.getMinutes() - 60);
+// document.write("One hour ago, it was " + currentDate);
+
 // Chapter 31 -34 Task No 12//
 
 // var now = new Date();
@@ -417,6 +423,16 @@
 // document.write("100 years back, it was " + now);
 
 // Chapter 31 -34 Task No 13//
+
+// var currentDate = new Date();
+// var currentYear = currentDate.getFullYear();
+// var userAge = prompt("Enter your age:");
+// var birthYear = currentYear - userAge;
+// document.write("<h1>")// document.write("Your age is " + userAge);
+// document.write("<br />");
+// document.write("<br />");
+// document.write("Your birth year is " + birthYear);
+// document.write("</h1>")
 
 // Chapter 31 -34 Task No 14//
 // var currentDateTime = new Date();
