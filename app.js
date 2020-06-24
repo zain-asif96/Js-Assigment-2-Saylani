@@ -480,3 +480,187 @@
 // document.write(
 //   "Gross Amount Payable(after due date): " + "<b>" + grossPayableAmount + "</b>"
 // );
+
+// Chapter 35 -38 Task No 1//
+// function dateToday() {
+// document.write(new Date());
+// }
+// dateToday();
+// document.write(dateToday());
+
+// Chapter 35 -38 Task No 2 //
+// function fullName() {
+// var firstname = prompt("Enter First Name:")
+// var lastname = prompt("Enter Last Name:")
+// alert("Hello! " + firstname + " " + lastname)
+// }
+// fullName();
+
+// Chapter 35 -38 Task No 3 //
+// function addNum() {
+// var numberOne = prompt("Enter First Number:")
+// var numberTwo = prompt("Enter Second Number:")
+// var convertIntoNum = parseInt(numberOne);
+// var convertIntoNumCopy = parseInt(numberTwo);
+// var numSum = convertIntoNum + convertIntoNumCopy
+// document.write("The sum of " + numberOne + " + " + numberTwo + " is = " + numSum)
+// }
+// addNum();
+
+// Chapter 35 -38 Task No 4 //
+// function calcNum() {
+// var numberOne = prompt("Enter First Number:")
+// var numberTwo = prompt("Enter Second Number:")
+// var operatorSign = prompt("Enter Arithmetic Operator:")
+// if (operatorSign == "+") {
+// document.write("The result is: " + Number(numberOne) + Number(numberTwo));
+// }
+// else if (operatorSign == "/") {
+// document.write("The result is: " + Number(numberOne) / Number(numberTwo));
+// }
+// else if (operatorSign == "*") {
+// document.write("The result is: " + Number(numberOne) * Number(numberTwo));
+// }
+// else if (operatorSign == "-") {
+// document.write("The result is: " + Number(numberOne) - Number(numberTwo));
+// }
+// else if (operatorSign == "%") {
+// document.write("The result is: " + Number(numberOne) % Number(numberTwo));
+// }
+// else if (operatorSign == null) {
+// document.write("Error")
+// }
+// else if (numberOne == null) {
+// document.write("Error")
+// }
+// else if (numberTwo == null) {
+// document.write("Error")
+// }
+// }
+// calcNum();
+
+// Chapter 35 -38 Task No 5 //
+// function squareArg(num) {
+// var squareFrm = num * num;
+// document.write("The square of " + num + " will be " + squareFrm)
+// }
+// squareArg(3);
+
+// Chapter 35 -38 Task No 6 //
+// function factorialOfNum(num) {
+// if (num < 0) {
+// return -1;
+// }
+// else if (num == 0) {
+// return 1;
+// }
+// else if (num > 0) {
+// return num * factorialOfNum(num - 1);
+// }
+// }
+// console.log(factorialOfNum(6));
+
+// Chapter 35 -38 Task No 7 //
+// function counting() {
+// var startNum = prompt("Enter number from where to start counting from:");
+// var endNum = prompt("Enter number to where end counting:");
+// for (var i = Number(startNum); i <= Number(endNum); i++) {
+// document.write(i + "<br />")
+// }
+// }
+// counting();
+
+// Chapter 35 -38 Task No 8 //
+// function calculateHypotenuse() {
+// var base = prompt("Enter base of right angled triangle:")
+// var perpendicular = prompt("Enter perpendicular of right angled triangle:")
+// var hypotenuse = Math.pow(base, 2) + Math.pow(perpendicular, 2);
+// document.write("The hypotenuse of a right angle triangle is : " + hypotenuse);
+// document.write("<br />")
+// function calculateSquare() {
+// var squareHypot = Math.sqrt(hypotenuse);
+// document.write("The sqaure of hypotenuse of a right angle triangle is : " + squareHypot);
+// }
+// calculateSquare();
+// }
+// calculateHypotenuse();
+
+// Chapter 35 -38 Task No 9 //
+// function rectangleArea(width, height) {
+// var area = width * height;
+// document.write("The area of rectangle is: " + area);
+// }
+// rectangleArea(5, 4);
+
+// Chapter 35 -38 Task No 10 //
+// function palindromeWord(str) {
+// var checkStr = "";
+// for (var i = str.length - 1; i >= 0; i--) {
+// checkStr += str[i];
+// }
+// if (checkStr === str) {
+// document.write(str + " :" + " This is a palindrome word." + "<br />")
+// } else {
+// document.write(str + " :" + " This is not a palindrome word." + "<br />")
+// }
+// }
+// palindromeWord("refer");// palindromeWord("syringe");
+
+// Chapter 35 -38 Task No 11 //
+// function upperCaseFirstLetter(str) {
+// var splitStr = str.toLowerCase().split(' ');
+// for (var i = 0; i < splitStr.length; i++) {
+// splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);
+// }
+// var joinStr = splitStr.join(' ');
+// document.write("Expected Output: " + joinStr + "<br />");
+// }
+// upperCaseFirstLetter("the cat is under the table");
+// upperCaseFirstLetter("the quick brown fox");
+
+// Chapter 35 -38 Task No 12 //
+// function longestWordInString(str) {
+// document.write("String: " + str)
+// document.write("<br />");
+// var splitString = str.split(" ");
+// var longestWord = 0;
+// var word = null;
+// for (var i = 0; i < splitString.length; i++) {
+// if (longestWord < splitString[i].length) {
+// longestWord = splitString[i].length;
+// word = splitString[i];
+// }
+// }
+// document.write("Longest Word In String: " + word)
+// return word;
+// }
+// longestWordInString('Web Development Tutorial');
+
+// Chapter 35 -38 Task No 13 //
+// function letterCount(str, alphabet) {
+// var letter = 0;
+// for (var i = 0; i < str.length; i++) {
+// if (str.charAt(i) == alphabet) {
+// letter += 1;
+// }
+// }
+// document.write("alphabet " + "<b>" + alphabet + "</b>" + " is occured " + letter + " times in " + str + "<br />");
+// return letter;
+// }
+// console.log(letterCount('Javascript', 'a'));
+// console.log(letterCount('JSResourceS.com', 'o'));
+
+// Chapter 35 -38 Task No 14 //
+// function calcCircumference(radius) {
+// var pieValue = 3.14;
+// var circumference = 2 * pieValue * radius;
+// document.write("The circumference of a circle is: " + Math.round(circumference));
+// }
+// calcCircumference(4);
+
+// function calcArea(radius) {
+// var pieValue = 3.14;
+// var areaOfCircle = pieValue * (Math.pow(radius, 2));
+// document.write("The area of a circle is: " + Math.round(areaOfCircle));
+// }
+// calcArea(4);
